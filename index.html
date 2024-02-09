@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+
+    <style>
+        :root{
+            --theme-color: #21418c;
+
+        }
+    
+        
+        body{
+            margin: 0;
+        }
+
+        .hero-title{
+            font-family: Roboto;
+            font-size: 5rem;
+            margin: 0;
+            color: white;
+        }
+
+        header{
+            
+            background-image: url('https://static.vecteezy.com/system/resources/previews/003/623/626/non_2x/sunset-lake-landscape-illustration-free-vector.jpg');
+            height: 70vh;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            font-family: Roboto;
+
+            display: flex;
+            flex-direction: column;
+
+            justify-content: center;
+            padding: 0 200px;
+        }
+
+        .hero-subtitle{
+            font-size: 20px;
+        }
+
+        .hero-title, .hero-subtitle{
+            text-shadow: 3px 3px 5px black;
+        }
+            .feature-card{
+                border: 2px solid red;
+                padding: 50px;
+                text-align: center;
+
+            }
+        .feature-card
+        {
+            border: 0px solid black;
+            padding: 10px 20px;
+            text-align: center;
+            border-radius: 5px;
+            transition-duration: 0.3s;
+        }
+        .card-container{
+            display: flex;
+            gap: 40px;
+            color: var(--theme-color);
+        }
+        .section-features, .Section-Video{
+            text-align: center;
+            padding: 50px 300px;
+        }
+        .Section-Video Video{
+            width: 100%;
+        }
+        .feature-card:hover{
+            background-color: var(--theme-color);
+            color: white;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+        }
+        .section-contact{
+            padding:50px 300px;
+        }
+        .text-input,.text-input-area{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 30px;
+            box-sizing: border-box;
+        }
+        .text-input-area{
+            resize: vertical;
+        }
+
+        .contact-btn{
+            padding: 10px 20px;
+            border: none;
+            background-color: var(--theme-color);
+            color: white;
+            cursor: pointer;
+
+        }
+        
+        .section-contact{
+            /*border: 2px solid red;*/
+        }
+        footer{
+            background-color: #bbb;
+            padding: 50px 300px;
+            font-family: Roboto;
+
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+        }
+        .footer-title{
+            margin: 0;
+        }
+
+        footer h4{
+            margin: 0;
+        }
+        .social-link{
+            color: #000;
+            text-decoration: none;
+        }
+
+    </style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+
+    <header>
+        <h1 class="hero-title" style="text-align: center;" >Welcome to my website</h1>
+
+        <p class="hero-subtitle">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti veritatis accusantium obcaecati ab error ipsum illo enim nam officiis delectus natus nobis nisi, aperiam nihil molestias. Commodi obcaecati molestiae accusantium!
+        </p>
+
+    </header>
+
+
+    <main>
+
+        <section class="section-features">
+            <h2 class=" section-title">our features</h2>
+            <div class="card-container">
+            
+            <div class="feature-card">
+                <i class="fa-5x fa-solid fa-truck"></i>
+                <h3 class="card-title">Fast Delivery</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, possimus?</p>
+
+            </div>
+            <div class="feature-card">
+                <i class="fa-5x fa-solid fa-truck"></i>
+                <h3 class="card-title">Fast Delivery</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, possimus?</p>
+
+            </div>
+            <div class="feature-card">
+                <i class="fa-5x fa-solid fa-truck"></i>
+                <h3 class="card-title">Fast Delivery</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, possimus?</p>
+
+            </div>
+            <div class="feature-card">
+                <i class="fa-5x fa-solid fa-truck"></i>
+                <h3 class="card-title">Fast Delivery</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, possimus?</p>
+
+            </div>
+        </div>
+        </section>
+        <section class="Section-Video">
+            <h2 class="section-title">Our Work</h2>
+            <video src="video.mp4" autoplay controls></video>
+        </section>
+        <section class="section-contact">
+
+             <h2 class="section-title">Contact Us</h2> </h2>
+             <form class="contact form">
+                <label>Name</label>
+                <input class="text-input" type="text">
+
+                <label>Email Address</label>
+                <input class="text-input" type="text">
+
+                <label>Contact No.</label>
+                <input class="text-input" type="text">
+
+                <label>Message</label>
+                <textarea class="text-input-area" rows="5"></textarea>
+
+                <button class="contact-btn">Submit</button>
+
+             </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+         <div>
+            <h3 class="footer-title">My Website Name </h3>
+            <p>&copy;2024 Website Name</p>
+         </div>
+         <div>
+            <h4>Find us at</h4>
+            <p ><i class="fa-brands fa-facebook"></i>
+                <a href="#" class="social-link">Facebook</a>
+            </p>
+            <p ><i class="fa-brands fa-instagram"></i>
+                <a href="#" class="social-link">Instagram</a>
+            </p>
+            <p ><i class="fa-brands fa-twitter"></i>
+                <a href="#" class="social-link">Twitter</a>
+            </p>
+            <p ><i class="fa-brands fa-linkedin"></i>
+                <a href="#" class="social-link">Linkedin</a>
+            </p>
+         </div>
+         <div>
+            <h4>Find us at</h4>
+            <p ><i class="fa-brands fa-facebook"></i>
+                <a href="#" class="social-link">Facebook</a>
+            </p>
+            <p ><i class="fa-brands fa-instagram"></i>
+                <a href="#" class="social-link">Instagram</a>
+            </p>
+            <p ><i class="fa-brands fa-twitter"></i>
+                <a href="#" class="social-link">Twitter</a>
+            </p>
+            <p ><i class="fa-brands fa-linkedin"></i>
+                <a href="#" class="social-link">Linkedin</a>
+            </p>
+         </div>
+    </footer>
+
+</body>
+</html>
